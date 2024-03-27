@@ -934,7 +934,7 @@
                                     <div class="form-group mb-0">
                                         <label class="form-label text-capitalize"
                                             for="admin_commission">
-                                            {{ translate('messages.Default_Commission_Rate_On_Order') }} (%)
+                                            {{ translate('messages.Default_Commission_Rate_On_Order') }} ()
                                             <span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('messages.Set_up_‘Default_Commission_Rate’_on_every_Order._Admin_can_also_set_store-wise_different_commission_rates_from_respective_store_settings.') }}">
                                                 <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
                                             </span>
@@ -942,7 +942,7 @@
                                         <input type="number" name="admin_commission" class="form-control"
                                             id="admin_commission" placeholder="{{ translate('messages.Ex:_10') }}"
                                             value="{{ $admin_commission ? $admin_commission->value : 0 }}"
-                                            min="0" max="100" required>
+                                            min="0" max="100000" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
